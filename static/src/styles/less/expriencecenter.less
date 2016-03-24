@@ -1,0 +1,103 @@
+@import "variables.less";
+.hsy-experience {
+    background: #ffffff;
+}
+
+.content-right .title {
+    font-size: 36px;
+    font-weight: blod;
+}
+.prc-content:nth-child(even) {
+    padding: 30px 0px;
+    background: rgb(248, 248, 248);
+}
+.prc-content:nth-child(odd) {
+    padding: 30px 0px;
+}
+
+.content-right {
+    padding-left: 90px;
+}
+
+.content-right .text-explain {
+    margin-top: 20px;
+}
+
+.content-right .btnlink {
+    display: block;
+    text-align: center;
+    border: 1px solid #ff0000;
+    line-height: 35px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: #ff0000;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.content-right .btnlinkdisabled {
+    display: block;
+    text-align: center;
+    border: 1px solid #666666;
+    background: #dfdfdf;
+    line-height: 35px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: #666666;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.wximg {
+    width: 50px;
+    height: auto;
+    margin-top: 35px;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+
+.wximg+.wximg {
+    margin-left: 25px;
+}
+
+.wximg:hover {
+    transform: scale(2.1);
+    -moz-transform: scale(2, 2);
+    -webkit-transform: scale(2, 2);
+    -o-transform: scale(2, 2);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(232, 45, 44);
+}
+.exptooltip {
+    left: 15px;
+    top: 28px;
+    position: relative;
+    clear: both;
+    display: inline-block;
+    padding: 8px 10px 8px 10px;
+    margin: 0 0 20px 0;
+    border-radius: 10px;
+    background-color: #fff8d1;
+}
+.exptooltip>a{
+    color: #ff0000;
+}
+.exptooltip:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid #fff8d1;
+    border-left: 15px solid transparent;
+    left: -15px;
+}
+
+.hideexptooltip {
+    display: none;
+}

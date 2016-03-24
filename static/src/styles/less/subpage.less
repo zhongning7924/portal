@@ -1,0 +1,62 @@
+@import "variables.less";
+
+.hsy-subpage-header {
+	border-bottom: 1px solid @color-border;
+}
+
+@media (min-width: 480px){
+	.hsy-subpage-header .container  {
+		padding-top: 20px;
+		padding-bottom:15px;
+	}
+}
+
+@media (max-width: 480px){
+	.hsy-subpage-header .container  {
+		padding-top: 10px;
+		padding-bottom:0;
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
+.hsy-subpage-header a {
+	color: #000;
+	text-decoration: none;
+}
+
+.hsy-subpage-header .title {
+	font-size:18px;
+	vertical-align: bottom;
+}
+
+.hsy-subpage-header a.return-home {
+	color: #666;
+	font-size:12px;
+	line-height: 40px;
+}
+
+.hsy-subpage-header a.return-home:hover {
+	color: red;
+}
+
+.hsy-subpage-content {
+	margin-top: 60px;
+	margin-bottom: 60px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-right: 30px;
+	padding-left: 30px;
+	background-color: #fff;
+	border:1px solid #e4e4e4;
+	font-size: @size-bigger-font;
+}
+.hsy-subpage-content .title-line{
+	color: #666;
+	margin-bottom:40px;
+	border-bottom:1px solid #ededed;
+}
+.hsy-subpage-content .title-line .iconfont{
+	font-size: 20px;
+	color: #4bbae8;
+}

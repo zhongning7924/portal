@@ -1,0 +1,43 @@
+@import "variables.less";
+
+.hsy-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.hsy-header a {
+  color: #fff;
+  text-decoration: none;
+}
+.hsy-header a:hover {
+  color: @color-danger;
+}
+.hsy-header ul{
+  margin-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+// 头部背景文字颜色
+.hsy-header, .hsy-header ul.visitor>li>a {
+  background-color: @color-bg-dark;
+  color: #fff;
+}
+
+.hsy-header ul.visitor>li+li:before {
+  padding-right: 10px;
+  content: "|";
+}
+
+.hsy-header .logged-user .btn.btn-link{
+  font-size: @size-primary-font;
+  line-height: 16px;
+  padding: 0 5px;
+  margin: 0;
+  color: #fff;
+  border: none;
+}
+.hsy-header .logged-user .dropdown-menu{
+  min-width: 100px;
+}
+.hsy-header .logged-user .dropdown-menu>li>a{
+  font-size: @size-primary-font;
+}

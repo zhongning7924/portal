@@ -1,0 +1,135 @@
+@import "variables.less";
+.account .account-subpage {
+    background-color: #fafafa;
+}
+.account-subpage-header {
+    border-bottom: 1px solid #dfdfdf;
+}
+.head-space{
+	padding-top:15px;
+	padding-bottom:15px;
+}
+.account .control-label{
+	padding-right: 15px;
+}
+.account-head .title {
+    font-size: 18px;
+    vertical-align: bottom;
+    margin-left: 5px;
+}
+.account{
+	font-size: 14px;
+}
+.account  .account-subpage-content {
+	margin-bottom:60px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-right: 30px;
+	padding-left: 30px;
+	background-color:#ffffff;
+	border:1px solid #e4e4e4;
+}
+.account  .account-subpage-content .title-line {
+    color: #666;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ededed;
+}
+.account .tab{
+	margin-top:40px;
+	margin-bottom:0;
+	padding-bottom:22px;
+	font-size:14px;
+    font-weight:bold;
+    z-index:100;
+}
+.account .tab li{
+	width: 100px;
+	text-align: center;
+	position: relative;
+}
+.account .tab a{
+	color:#666666;
+}
+.account .tab a:hover{
+	color:red;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+.account .tab a.active {
+	color:#e82d2c;
+}
+
+.account {
+	.tri{
+	    display: none;
+		left:34px;
+		height:0;
+	    width:0;
+	    overflow:hidden;
+	    border-style:dashed dashed solid dashed;
+	    border-width:16px;
+	}
+	.tri.tri-b {
+	  top:10px;
+	  border-color:transparent transparent #dfdfdf transparent;
+	}
+	.tri.tri-c {
+	  top:11px;
+	  border-color:transparent transparent #fff transparent;
+	}
+}
+/*三角形边框*/
+.account .tab a.active + .tri, .account .tab a.active + .tri + .tri{
+    display: block;
+	position:absolute;
+}
+.account .sr{
+	color:#222222;
+	border-radius:0px;
+}
+.account .account-text-red{
+	color:#e5241f;
+}
+.account .account-text{
+	padding-bottom: 30px
+}
+.account .copyLink{
+	margin-left : 15px;
+	cursor : pointer;
+	text-decoration : underline;
+    color: #333;
+    font-size: 14px;
+}
+.account .copyLink:hover{
+    color: #333;
+}
+.account .btn-position{
+    margin-right:15px;
+	padding: 10px 25px;
+}
+.account .account-subpage-content .title-line .createCompany{
+	cursor : pointer;
+}
+
+// 忘记密码页
+.hsy-subpage-content{
+  margin-top: 60px;
+  border: 1px solid #e4e4e4;
+  background: #fff;
+  padding-bottom: 50px;
+  margin-bottom: 60px;
+}
+.hsy-subpage-content .title-line{
+  border-top: 1px solid #e4e4e4;
+  margin: 50px 30px 40px 30px;
+}
+.hsy-subpage-content .control-label{
+  padding-right: 15px;
+}
+.hsy-subpage-content .reset-pwd{
+  margin-top: 60px;
+}
+.hsy-subpage-content .reset-sucess{
+  margin-top: 50px;
+}

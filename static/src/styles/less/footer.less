@@ -1,0 +1,30 @@
+@import "variables.less";
+.hsy-footer{
+  border-top: @color-border 1px solid;
+  color: @color-footer-font;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+// 首页背景文字颜色处理
+.hsy-footer.dark, .hsy-footer.dark>ul>li>a {
+  background-color: @color-bg-dark;
+  color: #fff;
+}
+
+.hsy-footer>ul{
+  margin-bottom: 20px;
+}
+
+.hsy-footer ul[class*="list-inline"]>li+li {
+  padding-left: 50px;
+}
+
+.hsy-footer>ul>li>a{
+  text-decoration: none;
+  color: @color-footer-font;
+}
+.hsy-footer>ul>li>a:hover{
+  color: @color-danger;
+}
+
+

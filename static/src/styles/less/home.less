@@ -1,0 +1,187 @@
+@import "variables.less";
+
+/** 首页相关样式 **/
+.hsy-home{
+  background-color: #fff;
+}
+
+/** carousel去掉阴影 **/
+.hsy-home .carousel-control.left,.hsy-home .carousel-control.right{
+  background-image:linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 0);
+  filter:none;
+}
+
+/** 1. 产品系列样式 **/
+.hsy-home .title-productseries {
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+.hsy-home .title-productgroup {
+  margin-bottom: 35px;
+}
+.hsy-home .title-productgroup.mobile {
+  margin-top: 120px;
+}
+.hsy-home .cell-product {
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.hsy-home .cell-product>a{
+  display: block;
+  position: relative;
+}
+
+.hsy-home .cell-product .intro{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 40%;
+  color: #fff;
+  transition: padding-top 0.3s ease; // padding-top属性在鼠标hover时渐变
+}
+
+.hsy-home .cell-product .intro>.title{
+  font-size: 25px;
+  text-align: center;
+}
+
+.hsy-home .cell-product .intro>.pop-text{
+  display: none;
+  line-height: 25px;
+  margin-top: 20px;
+}
+
+.hsy-home .cell-product:hover .intro{
+  padding-top: 20%;
+  background-color:rgba(0,0,0,0.5);
+}
+
+.hsy-home .cell-product:hover .intro>.pop-text{
+  display: block;
+}
+
+/** 2. 服务平台 **/
+.hsy-home .platform {
+  position: relative;
+}
+
+.hsy-home .title-platform {
+  margin-top: 160px;
+  margin-bottom: 60px;
+}
+
+.hsy-home .bg-platform {
+  position: absolute;
+  width: 100%;
+  height: 330px;
+  top: 385px;
+}
+
+.hsy-home .cell-platform {
+  padding: 0 25px;
+  color: #fff;
+}
+@media (max-width: 991px){
+  .hsy-home .cell-platform {
+    color: @color-weight;
+  }
+}
+.hsy-home .cell-platform .title{
+  text-align: center;
+  margin: 10px auto;
+  font-size: @size-bigger-font;
+  font-weight: bold;
+}
+
+.hsy-home .cell-platform .intro{
+  height: 100px;
+}
+
+/** 3. 合作伙伴 **/
+.hsy-home .title-partners {
+  margin-top: 280px;
+  margin-bottom: 60px;
+}
+.hsy-home .partners ul {
+  padding: 0px 20px;
+  text-align: center;
+}
+.hsy-home .partners ul>li {
+  width: 190px;
+  padding: 15px 10px;
+}
+/** 4. 立即体验 **/
+.hsy-home .experience {
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+.hsy-home .exp-btn {
+  position: relative;
+  margin-top: -12%;
+  width: 200px;
+  text-align: center;
+  padding: 6px 0;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  font-size: 18px;
+  color: #e8b000;
+  text-decoration: none;
+}
+
+.hsy-home .exp-btn:hover {
+  border: 1px solid #e8b000;
+  background-color: #e8b000;
+  color: #fff;
+}
+
+/** 侧边按钮：在线客服，回到顶部 **/
+@height-sidebtn: 36px;
+.hsy-home .side-btn {
+  position: fixed;
+  right: 0;
+  line-height: @height-sidebtn;
+}
+.hsy-home .side-btn.online {
+  bottom: 100px;
+}
+.hsy-home .side-btn.backtop {
+  bottom: 55px;
+}
+.hsy-home .side-btn>a {
+  color: #fff;
+}
+.hsy-home .side-btn>a>.icon {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: @height-sidebtn;
+  height: @height-sidebtn;
+}
+.hsy-home .side-btn>a>.icon>.iconfont{
+  font-size: 20px;
+}
+.hsy-home .side-btn>a>.icon, .hsy-home .side-btn>a>.text{
+  display: block;
+  background-color: @color-bg-dark;
+}
+.hsy-home .side-btn:hover>a>.icon, .hsy-home .side-btn:hover>a>.text {
+  background-color: @color-danger;
+}
+@width-sidebtn-text: 65px; // 按钮弹出文本宽度
+.hsy-home .side-btn>a>.text{
+  position: absolute;
+  padding-left: 10px;
+  width: @width-sidebtn-text;
+  top: 0;
+  left: 0;
+  transition: left 0.5s ease; // left属性在鼠标hover时渐变
+}
+.hsy-home .side-btn:hover>a>.text {
+  left: -@width-sidebtn-text;
+}

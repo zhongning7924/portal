@@ -1,0 +1,137 @@
+@import "variables.less";
+@color-nav-bg: #fff;
+@color-nav-border: #f6f6f6;
+
+.hsy-navbar {
+  &.navbar {
+    margin-bottom: 0;
+    border: none;
+    background-color: @color-nav-bg;
+
+    @media (max-width: @width-screen-tablet){
+      padding: 0 15px;
+    }
+  }
+  .navbar-brand {
+    padding-top: 24px;
+  }
+  .navbar-toggle{
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+  &.navbar-default {
+    .nav>li>a{
+      padding: 35px 15px;
+      font-size: @size-bigger-font;
+      color: @color-weight;
+      &:hover{
+        color: @color-danger;
+      }
+
+      @media (max-width: @width-screen-tablet){
+        padding: 15px 15px;
+      }
+    }
+    .nav>li:hover{
+      background: rgb(249,249,249);
+    }
+  }
+  .nav {
+    position: relative;
+  }
+  .nav>li{
+    > .subnav {
+      display: none;
+      position: absolute;
+      top: 90px;
+      z-index: 1;
+      background-color: @color-nav-bg;
+      border: 1px solid @color-nav-border;
+      box-shadow: 0.5px  2px  3px  rgba(0, 0, 0, 0.36);
+      padding: 20px 0;
+
+      @media (max-width: @width-screen-tablet){
+        top: 45px;
+      }
+
+      li.item > a {
+        display: block;
+        color: @color-weight;
+        &:hover{
+          color: @color-danger;
+        }
+      }
+    }
+    &:hover .subnav{
+      display: block;
+    }
+
+    > .subnav-product {
+      left: -300px;
+      right: -330px;
+
+      @media (max-width: @width-screen-tablet){
+        left: 0px;
+      }
+
+      > li {
+        padding-left: 30px;
+        height: 160px;
+
+        @media (max-width: @width-screen-tablet){
+          display: block;
+        }
+
+        & + li {
+          border-left: 1px solid #f0f0f0;
+        }
+        > .title {
+          color: @color-weight;
+          cursor: default;
+          margin: 10px 0;
+
+          > span {
+            padding-left: 5px;
+            border-left: 2px solid #888;
+            font-weight: bold;
+          }
+        }
+
+        > .items {
+          padding-left: 5px;
+          > ul {
+            float: left;
+            & + ul {
+              margin-left: 10px;
+            }
+            > li {
+              width: 80px;
+              padding: 12px 0;
+            }
+          }
+        }
+      }
+    }
+
+    > .subnav-helpcenter {
+      right: 0px;
+      width: 100px;
+
+      @media (max-width: @width-screen-tablet){
+        left: 0px;
+        width: auto;
+      }
+
+      > li {
+        text-align: center;
+         @media (max-width: @width-screen-tablet){
+          padding-left: 20px;
+          text-align: left;
+        }
+        & + li {
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+}
